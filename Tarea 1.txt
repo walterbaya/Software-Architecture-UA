@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+En esta tarea debe suponer que la aplicación móvil (descrita anteriormente) almacena sus datos en una base de datos remota 
+(en lugar de hacerlo localmente, como hace la versión actual de la aplicación) Para acceder a esta base de datos remota,
+la aplicación móvil envía una solicitud HTTP al servidor remoto que coincide con la interfaz proporcionada por el servidor remoto.
+
+El servidor web analiza la solicitud HTTP para determinar su tipo y, a continuación, pasa los datos al servidor de la aplicación. 
+Los datos que el servidor web proporciona al servidor de aplicaciones deben coincidir con la interfaz proporcionada por el servidor de aplicaciones.
+
+A continuación, el servidor de aplicaciones analiza la solicitud. Dependiendo de la solicitud, obtiene los datos de la base de datos o los modifica 
+utilizando la interfaz proporcionada por la base de datos.
+
+Además de una aplicación móvil, también existe una aplicación web a la que se puede acceder a través de un navegador web. 
+La aplicación web, al igual que la aplicación móvil, puede acceder a la base de datos remota realizando una petición al servidor web.
+
+A partir de esta descripción, elabore un diagrama de componentes UML que represente este sistema.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ Primeramente identificamos los componentes principales:
+
+* Aplicación Móvil 
+* Aplicación Web
+* Servidor Web  (provee interfaz para recibir peticiones de la aplicacion móvil)
+* Servidor de aplicación (provee interfaz para recibir los datos del servidor web)
+* Base de datos (provee interfaz para interactuar con servidor de aplicación) 

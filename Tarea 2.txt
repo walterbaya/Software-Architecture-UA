@@ -1,0 +1,33 @@
+Diagrama de despliegue
+
+
+Cómo crear su tarea
+
+Suponga que la aplicación descrita en la tarea anterior almacena sus datos en una base de datos remota y que la aplicación tiene una versión móvil y otra web.
+
+Para acceder a esta base de datos remota, la aplicación móvil/web envía una solicitud HTTP al servidor web remoto. 
+El servidor web analiza la solicitud HTTP para determinar su tipo y, a continuación, pasa los datos al servidor de aplicaciones. 
+El servidor de aplicaciones analiza la solicitud y, en función de ésta, obtiene datos de la base de datos o la modifica.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Puede suponer que: 
+
+* El servidor web, el servidor de aplicaciones y la base de datos residen en el mismo dispositivo y todos se ejecutan en el mismo entorno de ejecución.
+
+* Existen 3 archivos JAR independientes que se utilizan para manifestar los componentes del servidor web, el servidor de aplicaciones y la base de datos,
+  respectivamente.   
+
+* El componente del servidor web utiliza un archivo de configuración para configurar el servidor y dirigir las solicitudes al servidor de aplicaciones.
+
+* El componente del servidor de aplicaciones ejecuta un archivo JAR para buscar y modificar la base de datos. 
+
+* El componente de base de datos utiliza un archivo XSD para definir su esquema.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Un archivo HTML manifiesta la aplicación web para compartir. 
+
+* Un archivo APK manifiesta la aplicación móvil para compartir.
+
+Basándose en esta descripción realice un diagrama de despliegue a nivel de especificación que capture este sistema.
